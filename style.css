@@ -1,8 +1,8 @@
 *{
     margin: 0;
+    font-family: Futura;
 }
 ::-webkit-input-placeholder{
-    font-style:italic;
     font-weight: bold;
 }
 body{
@@ -30,6 +30,7 @@ body{
     color: white;
     border-radius: 0;
     border-bottom-style: outset;
+    padding-left: 45px;
 }
 #resultados{
     display: none;
@@ -90,4 +91,25 @@ body{
 .atividade-diaria:hover{
     background-color: tomato;
     border-radius: 35px;
+}
+input.inner-icon {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+input.cake-icon {
+    background-image: url(./img/cake-icon.png);
+}
+input.height-icon {
+    background-image: url(./img/height-icon.png);
+}
+input.weight-icon {
+    background-image: url(./img/weight-icon.png);
+}
+.form-control:focus{
+    background: transparent;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
