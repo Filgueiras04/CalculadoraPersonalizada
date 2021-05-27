@@ -1,24 +1,39 @@
+*{
+    margin: 0;
+    background: url('./img/ArteBG.png') no-repeat;
+    background-size: 100%;
+}
 #form-final{
     display: none;
 }
+#resultados{
+    display: none;
+}
 #genero{
-    width: 269px;
+    width: 100%;
     height: 268px;
+    display: flex;
 }
 #genero-male{
-    width: 269px;
+    width: 100%;
     height: 268px;
-    background: url('./img/male.png');
+    background: url('./img/male.png') no-repeat;
     opacity: 0.6;
+    flex-grow: 1;
+    text-align: c;
+}
+#genero-female{
+    width: 100%;
+    height: 268px;
+    background: url('./img/female.png') no-repeat;
+    opacity: 0.6;
+    flex-grow: 1;
+}
+#genero-or{
+    flex-grow: 1;
 }
 #genero-male:hover   {
     opacity: 1;
-}
-#genero-female{
-    width: 269px;
-    height: 268px;
-    background: url('./img/female.png');
-    opacity: 0.6;
 }
 #genero-female:hover   {
     opacity: 1;
@@ -31,7 +46,7 @@
     cursor:pointer;
     display: inline-block;
     margin: 10px;
-    background: url('./img/gradient-border.png');
+    background: url('./img//ArtePerguntas.png');
     background-size: 100% 100%;
     width: 240px;
     height: 52px;
