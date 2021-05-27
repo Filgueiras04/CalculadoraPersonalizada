@@ -47,3 +47,12 @@ function btnCalcular(){
     document.getElementById('qtdCarboidratos').innerHTML = "Quantidade de carboidrátos por dia: " + v_qtdCarboidratos;
     document.getElementById('qtdGorduras').innerHTML = "Quantidade de gorduras por dia: " + v_qtdGorduras;
 }
+
+function genero(){
+    document.getElementById('genero').style.display = "none";
+    document.getElementById('atividade-diaria').style.display = "block";
+}
+function atividadeDiaria(){
+    document.getElementById('atividade-diaria').style.display = "none";
+    document.getElementById('form-final').style.display = "block";
+}

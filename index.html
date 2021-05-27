@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div id="genero">
+        <div id="genero-male" onclick="genero()"></div>
+        <span id="geneto-or">OR</span>
+        <div id="genero-female" onclick="genero()"></div>
+    </div>
+
+    <div id="atividade-diaria">
+        <div class="atividade-diaria" id="atividade-diaria-preguicoso" onclick="atividadeDiaria()"><br>Preguiçoso</div>
+        <div class="atividade-diaria" id="atividade-diaria-poucoativo" onclick="atividadeDiaria()"><br>Um pouco ativo</div>
+        <div class="atividade-diaria" id="atividade-diaria-ativo" onclick="atividadeDiaria()"><br>Ativo</div>
+        <div class="atividade-diaria" id="atividade-diaria-media" onclick="atividadeDiaria()"><br>Atividade média</div>
+        <div class="atividade-diaria" id="atividade-diaria-extremamenteativo" onclick="atividadeDiaria()"><br>Extremamente ativo</div>
+    </div>
+
+    <div id="form-final">
+        <input type="number" id="idade" placeholder="Idade">
         <input type="number" id="altura" placeholder="Altura" >
         <input type="number" id="peso" placeholder="Peso" >
         <input type="number" id="meta_peso" placeholder="Meta de Peso">

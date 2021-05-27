@@ -1,0 +1,39 @@
+#form-final{
+    display: none;
+}
+#genero{
+    width: 269px;
+    height: 268px;
+}
+#genero-male{
+    width: 269px;
+    height: 268px;
+    background: url('./img/male.png');
+    opacity: 0.6;
+}
+#genero-male:hover   {
+    opacity: 1;
+}
+#genero-female{
+    width: 269px;
+    height: 268px;
+    background: url('./img/female.png');
+    opacity: 0.6;
+}
+#genero-female:hover   {
+    opacity: 1;
+}
+#atividade-diaria{
+    display: none;
+}
+
+.atividade-diaria{
+    cursor:pointer;
+    display: inline-block;
+    margin: 10px;
+    background: url('./img/gradient-border.png');
+    background-size: 100% 100%;
+    width: 240px;
+    height: 52px;
+    text-align: center;
+}
