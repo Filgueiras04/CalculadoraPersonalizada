@@ -4,39 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div id="genero">
-        <div id="genero-male"  class="genero" onclick="genero()"></div>
-        <span id="genero-or" class="genero" >OR</span>
-        <div id="genero-female"  class="genero" onclick="genero()"></div>
-    </div>
+    <div class="container">
+        <div class="row" id="logo"></div>
+        <div id="textodieta" class="row ">
+            <div class="col">
+                <h1>Pegue aqui sua dieta personalizada</h1>
+            </div>
+        </div>
+        <div class="row justify-content-md-center" id="genero">
+            <span>Selecione aqui o seu gênero</span>
+            <div id="genero-male"  class="col" onclick="genero()"></div>
+            <span id="genero-or" class="col-md-auto" >OU</span>
+            <div id="genero-female"  class="col" onclick="genero()"></div>
+        </div>
+    
+        <div id="atividade-diaria" class="row justify-content-md-center row-cols-3">
+            <span>Qual o nível de atividades feitas por dia?</span><br>
+            <div class="atividade-diaria col" id="atividade-diaria-preguicoso" onclick="atividadeDiaria()"><br>Preguiçoso</div>
+            <div class="atividade-diaria col" id="atividade-diaria-poucoativo" onclick="atividadeDiaria()"><br>Um pouco ativo</div>
+            <div class="atividade-diaria col" id="atividade-diaria-ativo" onclick="atividadeDiaria()"><br>Ativo</div>
+            <div class="atividade-diaria col" id="atividade-diaria-media" onclick="atividadeDiaria()"><br>Atividade média</div>
+            <div class="atividade-diaria col" id="atividade-diaria-extremamenteativo" onclick="atividadeDiaria()"><br>Extremamente ativo</div>
+        </div>
 
-    <div id="atividade-diaria">
-        <div class="atividade-diaria" id="atividade-diaria-preguicoso" onclick="atividadeDiaria()"><br>Preguiçoso</div>
-        <div class="atividade-diaria" id="atividade-diaria-poucoativo" onclick="atividadeDiaria()"><br>Um pouco ativo</div>
-        <div class="atividade-diaria" id="atividade-diaria-ativo" onclick="atividadeDiaria()"><br>Ativo</div>
-        <div class="atividade-diaria" id="atividade-diaria-media" onclick="atividadeDiaria()"><br>Atividade média</div>
-        <div class="atividade-diaria" id="atividade-diaria-extremamenteativo" onclick="atividadeDiaria()"><br>Extremamente ativo</div>
-    </div>
+        <div id="form-final" class="row">
+            <div class="col">
+                <span>Preencha as informações abaixo</span>
+                <input type="number" id="idade" placeholder="Idade" class="form-control">
+                <input type="number" id="altura" placeholder="Altura"  class="form-control">
+                <input type="number" id="peso" placeholder="Peso" class="form-control" >
+                <input type="number" id="meta_peso" placeholder="Meta de Peso" class="form-control">
+                <input type="button" value="Calcular" onclick="btnCalcular()">
+            </div>
+        </div>
 
-    <div id="form-final">
-        <input type="number" id="idade" placeholder="Idade">
-        <input type="number" id="altura" placeholder="Altura" >
-        <input type="number" id="peso" placeholder="Peso" >
-        <input type="number" id="meta_peso" placeholder="Meta de Peso">
-        <input type="button" value="Calcular" onclick="btnCalcular()">
-    </div>
-    <div id="resultados">
-        <span id="qtdAgua"></span><br>
-        <span id="calcIMC"></span><br>
-        <span id="qtdCalorias"></span><br>
-        <span id="qtdCarboidratos"></span><br>
-        <span id="qtdGorduras"></span><br>
-        <span id="qtdProteinas"></span><br>
+        <div id="resultados">
+            <span id="qtdAgua"></span><br>
+            <span id="calcIMC"></span><br>
+            <span id="qtdCalorias"></span><br>
+            <span id="qtdCarboidratos"></span><br>
+            <span id="qtdGorduras"></span><br>
+            <span id="qtdProteinas"></span><br>
+        </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

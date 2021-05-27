@@ -1,26 +1,54 @@
 *{
     margin: 0;
+}
+::-webkit-input-placeholder{
+    font-style:italic;
+    font-weight: bold;
+}
+body{
     background: url('./img/ArteBG.png') no-repeat;
     background-size: 100%;
 }
+#logo{
+    height: 150px;
+}
+#textodieta{
+    color: white;
+    text-align: center;
+}
 #form-final{
     display: none;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+    color: white;
+}
+.form-control{
+    margin-bottom: 10px;
+    border-style: none;
+    background: none;
+    color: white;
+    border-radius: 0;
+    border-bottom-style: outset;
 }
 #resultados{
     display: none;
 }
 #genero{
-    width: 100%;
+    width: 70%;
     height: 268px;
     display: flex;
+    text-align: center;
+    margin-left: 15%;
+    color: white;
 }
 #genero-male{
     width: 100%;
     height: 268px;
     background: url('./img/male.png') no-repeat;
+    background-size: 100%;
     opacity: 0.6;
     flex-grow: 1;
-    text-align: c;
 }
 #genero-female{
     width: 100%;
@@ -28,9 +56,14 @@
     background: url('./img/female.png') no-repeat;
     opacity: 0.6;
     flex-grow: 1;
+    background-size: 100%;
 }
 #genero-or{
     flex-grow: 1;
+    text-align: center;
+    margin-top: 15%;
+    color: white;
+    font-size: 30px;
 }
 #genero-male:hover   {
     opacity: 1;
@@ -40,6 +73,8 @@
 }
 #atividade-diaria{
     display: none;
+    text-align: center;
+    color: white;
 }
 
 .atividade-diaria{
@@ -48,7 +83,11 @@
     margin: 10px;
     background: url('./img//ArtePerguntas.png');
     background-size: 100% 100%;
-    width: 240px;
-    height: 52px;
+    width: 295px;
+    height: 70px;
     text-align: center;
+}
+.atividade-diaria:hover{
+    background-color: tomato;
+    border-radius: 35px;
 }
