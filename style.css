@@ -89,7 +89,7 @@ body{
     text-align: center;
 }
 .atividade-diaria:hover{
-    background-color: tomato;
+    background-image: url(./img/ArtePerguntasBg.png);
     border-radius: 35px;
 }
 input.inner-icon {
