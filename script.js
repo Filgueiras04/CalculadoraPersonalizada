@@ -42,22 +42,23 @@ function btnCalcular(){
     v_qtdCarboidratos = qtdCarboidratos(peso);
     v_qtdGorduras = qtdGorduras(peso, meta_peso);
 
-    var barCarboidratos = new ProgressBar.Circle('#barCarboidratos', {
-        strokeWidth: 6,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: 'green',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: null
-    });
     var barCalorias = new ProgressBar.Circle('#barCalorias', {
         strokeWidth: 6,
         easing: 'easeInOut',
         duration: 1400,
-        color: 'green',
         trailColor: '#eee',
         trailWidth: 1,
+        duration: 2000,
+        svgStyle: null
+    });
+    var barCarboidratos = new ProgressBar.Circle('#barCarboidratos', {
+        strokeWidth: 6,
+        easing: 'easeInOut',
+        duration: 1400,
+        color: 'red',
+        trailColor: '#eee',
+        trailWidth: 1,
+        duration: 2000,
         svgStyle: null
     });
     var barProteinas = new ProgressBar.Circle('#barProteinas', {
@@ -67,6 +68,7 @@ function btnCalcular(){
         color: 'green',
         trailColor: '#eee',
         trailWidth: 1,
+        duration: 2000,
         svgStyle: null
     });
     var barGorduras = new ProgressBar.Circle('#barGorduras', {
@@ -76,6 +78,7 @@ function btnCalcular(){
         color: 'green',
         trailColor: '#eee',
         trailWidth: 1,
+        duration: 2000,
         svgStyle: null
     });
 
@@ -85,17 +88,23 @@ function btnCalcular(){
     document.getElementById('form-final').style.display = "none";
     document.getElementById('resultados').style.display = "block";
 
-    barCarboidratos.animate(1.0);
-    barCarboidratos.setText(v_qtdCarboidratos);
-
-    barCalorias.animate(1.0);
+    barCalorias.animate(1.0, {
+        from: { color: '#FFF' },
+        to: { color: '#000' },
+        step: function(state, circle, attachment) {
+            circle.path.setAttribute('stroke', state.color);
+        }
+    });
     barCalorias.setText(v_qtdCalorias);
 
-    barProteinas.animate(1.0);
-    barProteinas.setText(v_qtdProteinas);
+    barCarboidratos.animate(0.70);
+    barCarboidratos.setText(v_qtdCarboidratos);
 
     barGorduras.animate(1.0);
     barGorduras.setText(v_qtdGorduras);
+
+    barProteinas.animate(1.0);
+    barProteinas.setText(v_qtdProteinas);
 
 }
 

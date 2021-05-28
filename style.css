@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Futura;
+    src: url(./fontes/futur.ttf);
+}
+
 *{
     margin: 0;
     font-family: Futura;
@@ -21,6 +26,7 @@ body{
 #textodieta{
     color: white;
     text-align: center;
+    text-shadow: 2px 2px rgba(000, 000, 000, 0.5);
 }
 #form-final{
     display: none;
@@ -131,6 +137,7 @@ input.weight-icon {
     margin: 15px;
     color: white;
     text-align: center;
+    box-shadow: inset 0 0 15px rgba(000, 255, 255, 0), 0 0 15px rgba(000, 000, 000, 0);
 }
 #img-agua{
     width: 100%;
