@@ -3,7 +3,7 @@ function qtdAgua(peso){
 }
 
 function calcIMC(peso, altura){
-    return (peso / (altura * altura)).toFixed(2);
+    return (peso / (altura * altura)).toFixed(1);
 }
 
 function qtdProteinas(peso){
