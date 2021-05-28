@@ -43,12 +43,12 @@ function btnCalcular(){
     v_qtdCarboidratos = qtdCarboidratos(peso);
     v_qtdGorduras = qtdGorduras(peso, meta_peso);
 
-    document.getElementById('qtdAgua').innerHTML = "Quantidade de água diária: " + v_qtdAgua;
-    document.getElementById('calcIMC').innerHTML = "Seu IMC: " + v_calcIMC;
-    document.getElementById('qtdProteinas').innerHTML = "Quantidade de proteínas diárias: " + v_qtdProteinas;
-    document.getElementById('qtdCalorias').innerHTML = "Quantidade de calorias diárias: " + v_qtdCalorias;
-    document.getElementById('qtdCarboidratos').innerHTML = "Quantidade de carboidrátos por dia: " + v_qtdCarboidratos;
-    document.getElementById('qtdGorduras').innerHTML = "Quantidade de gorduras por dia: " + v_qtdGorduras;
+    document.getElementById('qtdAgua').innerHTML = "Recomendado" + '<BR>' + v_qtdAgua;
+    document.getElementById('calcIMC').innerHTML = v_calcIMC;
+    document.getElementById('qtdProteinas').innerHTML = v_qtdProteinas;
+    document.getElementById('qtdCalorias').innerHTML = v_qtdCalorias;
+    document.getElementById('qtdCarboidratos').innerHTML = v_qtdCarboidratos;
+    document.getElementById('qtdGorduras').innerHTML = v_qtdGorduras;
 }
 
 function genero(){
