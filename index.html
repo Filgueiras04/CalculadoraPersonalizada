@@ -36,21 +36,31 @@
         <div id="form-final" class="row">
             <div class="col">
                 <span>Preencha as informações abaixo</span><br>
-                <input type="number" id="idade" placeholder="Idade" class="inner-icon cake-icon form-control">
-                <input type="number" id="altura" placeholder="Altura"  class="form-control inner-icon height-icon">
-                <input type="number" id="peso" placeholder="Peso" class="form-control inner-icon weight-icon" >
-                <input type="number" id="meta_peso" placeholder="Meta de Peso" class="form-control inner-icon weight-icon">
+                <input value="21" type="number" id="idade" placeholder="Idade" class="inner-icon cake-icon form-control">
+                <input value="1.65" type="number" id="altura" placeholder="Altura"  class="form-control inner-icon height-icon">
+                <input value="62" type="number" id="peso" placeholder="Peso" class="form-control inner-icon weight-icon" >
+                <input value="55" type="number" id="meta_peso" placeholder="Meta de Peso" class="form-control inner-icon weight-icon">
                 <input type="button" value="Calcular" class="btn btn-primary" onclick="btnCalcular()">
             </div>
         </div>
 
-        <div id="resultados">
-            <span id="qtdAgua"></span><br>
-            <span id="calcIMC"></span><br>
-            <span id="qtdCalorias"></span><br>
-            <span id="qtdCarboidratos"></span><br>
-            <span id="qtdGorduras"></span><br>
-            <span id="qtdProteinas"></span><br>
+        <div id="resultados" class="row">
+            <div class="row painel-resultados">
+                <div class="col">
+                    <h2>Quantidade de água diária</h2><br>
+                    <div id="img-agua"></div>
+                    <span id="qtdAgua"></span>
+                </div>
+                <div class="col"><span id="calcIMC"></span><br></div>
+            </div>
+            <div class="row painel-resultados">
+                <div class="col"><span id="qtdCalorias"></span><br></div>
+                <div class="col"><span id="qtdCarboidratos"></span><br></div>
+            </div>
+            <div class="row painel-resultados">
+                <div class="col"><span id="qtdGorduras"></span><br></div>
+                <div class="col"><span id="qtdProteinas"></span><br></div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

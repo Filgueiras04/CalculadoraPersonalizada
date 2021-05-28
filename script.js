@@ -29,6 +29,9 @@ function qtdGorduras(peso, meta_peso){
 }
 
 function btnCalcular(){
+    document.getElementById('form-final').style.display = "none";
+    document.getElementById('resultados').style.display = "block";
+
     altura = document.getElementById('altura').value;
     peso = document.getElementById('peso').value;
     meta_peso = document.getElementById('meta_peso').value;

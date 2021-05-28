@@ -8,6 +8,7 @@
 body{
     background: url('./img/ArteBG.png') no-repeat;
     background-size: 100%;
+    background-color: #3b9fa4;
 }
 #logo{
     height: 150px;
@@ -110,6 +111,26 @@ input.weight-icon {
 .form-control:focus{
     background: transparent;
     background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+.painel-resultados{
+    width: 70%;
+    margin-left: 15%;
+    height: 473px;
+}
+.painel-resultados .col{
+    background-color: #0b4b50;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 15px;
+    color: white;
+}
+#img-agua{
+    width: 70%;
+    height: 50%;
+    margin-left: 15%;
+    background-image: url(./img/water-diagram.png) ;
     background-repeat: no-repeat;
     background-position: left center;
 }
