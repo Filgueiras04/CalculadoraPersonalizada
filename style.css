@@ -140,20 +140,33 @@ input.weight-icon {
 #imc{
     margin-top: 30%;
     font-size: 60px;
+    color: green;
 }
-#calorias{
-    margin-top: 30%;
+#barCalorias{
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 70%;
+    height: auto;
     font-size: 60px;
 }
-#carboidratos{
-    margin-top: 30%;
-    font-size: 50px;
+#barCarboidratos{
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 70%;
+    height: auto;
+    font-size: 40px;
 }
-#gorduras{
-    margin-top: 30%;
+#barGorduras{
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 70%;
+    height: auto;
     font-size: 60px;
 }
-#proteinas{
-    margin-top: 30%;
-    font-size: 50px;
+#barProteinas{
+    margin-top: 10%;
+    margin-left: 15%;
+    width: 70%;
+    height: auto;
+    font-size: 40px;
 }
