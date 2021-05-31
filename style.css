@@ -109,7 +109,6 @@ input.inner-icon {
     background-repeat: no-repeat;
     background-position: left center;
 }
-
 input.cake-icon {
     background-image: url(./img/cake-icon.png);
 }
@@ -124,6 +123,16 @@ input.weight-icon {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: left center;
+}
+.btn-continuar{
+    margin-right: 5px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-image: url(./img/SetaParaBotão.png);
+    background-color: #002b42;
+    border-radius: 10px;
+    color: white;
 }
 .painel-resultados{
     width: 70%;
