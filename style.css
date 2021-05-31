@@ -2,7 +2,6 @@
     font-family: Futura;
     src: url(./fontes/futur.ttf);
 }
-
 *{
     margin: 0;
     font-family: Futura;
@@ -89,7 +88,6 @@ body{
     text-align: center;
     color: white;
 }
-
 .atividade-diaria{
     cursor:pointer;
     display: inline-block;
@@ -153,6 +151,11 @@ input.weight-icon {
     height: 50%;
     text-align: center;
 }
+#qtdAgua{
+    background: linear-gradient(0deg, #e60036 0%, #fcbc3c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 #imc{
     margin-top: 30%;
     font-size: 60px;
@@ -164,6 +167,11 @@ input.weight-icon {
     width: 70%;
     height: auto;
     font-size: 60px;
+}
+#barCalorias .progressbar-text{
+    background: linear-gradient(268deg, #e60036 0%, #fcbc3c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #barCarboidratos{
     margin-top: 10%;
@@ -185,4 +193,7 @@ input.weight-icon {
     width: 70%;
     height: auto;
     font-size: 40px;
+}
+.minimo-maximo{
+    font-size: 10px;
 }
