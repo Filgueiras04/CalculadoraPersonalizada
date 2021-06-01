@@ -229,3 +229,55 @@ input.weight-icon {
 #btn-dieta div a input:hover{
     background-image: url(./img/ArtePerguntasBg.png);
 }
+
+
+/** Media queries **/ 
+
+@media (max-width: 414px){
+
+    #logo{
+        background-size: 60%;
+        margin-left: 30%;
+    }
+    #genero-or{
+        margin-top: 0px;
+    }
+    #genero-male{
+        opacity: 1;
+    }
+    #genero-female{
+        opacity: 1;
+    }
+    #form-final{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .btn-continuar{
+        padding-right: 15%;
+    }
+    .painel-resultados{
+        margin-bottom: 45%;
+    }
+    .calorias-carboidratos{
+        margin-bottom: 35%
+    }
+    #barCalorias{
+        font-size: 40px;
+    }
+    #barCarboidratos{
+        font-size: 25px;
+    }
+    #barGorduras{
+        font-size: 50px;
+    }
+    #barProteinas{
+        font-size: 25px;
+    }
+    #imc{
+        margin-top: 10%;
+        margin-bottom: 25%;
+    }
+    .qtdAgua{
+        margin-top: 10%;
+    }
+}
