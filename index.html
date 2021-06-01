@@ -16,17 +16,18 @@
         </div>
         <div id="textodieta" class="row ">
             <div class="col">
-                <h1>Pegue aqui sua dieta personalizada</h1>
+                <h1>Dieta personalizada</h1>
             </div>
         </div>
+        <br>
         <div class="row justify-content-md-center" id="genero">
-            <span>Selecione aqui o seu gênero</span>
+            <span>Gênero:</span>
             <div id="genero-male"  class="col" onclick="genero()"></div>
             <span id="genero-or" class="col-md-auto" >OU</span>
             <div id="genero-female"  class="col" onclick="genero()"></div>
         </div>
     
-        <div id="atividade-diaria" class="row justify-content-md-center row-cols-3">
+        <div id="atividade-diaria" class="row row-cols-2">
             <span>Qual o nível de atividades feitas por dia?</span><br>
             <div class="atividade-diaria col" id="atividade-diaria-preguicoso" onclick="atividadeDiaria()"><br>Preguiçoso</div>
             <div class="atividade-diaria col" id="atividade-diaria-poucoativo" onclick="atividadeDiaria()"><br>Um pouco ativo</div>
@@ -38,29 +39,40 @@
         <div id="form-final" class="row">
             <div class="col">
                 <span>Preencha as informações abaixo</span><br>
-                <input value="21" type="number" id="idade" placeholder="Idade" class="inner-icon cake-icon form-control">
-                <input value="1.65" type="number" id="altura" placeholder="Altura"  class="form-control inner-icon height-icon">
-                <input value="162" type="number" id="peso" placeholder="Peso" class="form-control inner-icon weight-icon" >
-                <input value="55" type="number" id="meta_peso" placeholder="Meta de Peso" class="form-control inner-icon weight-icon">
-                <input type="button" value="CONTINUAR   " class="btn btn-continuar seta-icon" onclick="btnCalcular()">
+                <input value="21" type="number" id="idade" placeholder="Idade (Anos)" class="inner-icon cake-icon form-control">
+                <input value="165" type="number" id="altura" placeholder="Altura (cm)"  class="form-control inner-icon height-icon">
+                <input value="62" type="number" id="peso" placeholder="Peso (Kg)" class="form-control inner-icon weight-icon" >
+                <input value="55" type="number" id="meta_peso" placeholder="Meta de Peso (Kg)" class="form-control inner-icon weight-icon">
+                <input type="button" value="CONTINUAR" class="btn btn-continuar seta-icon" onclick="btnCalcular()">
             </div>
         </div>
 
         <div id="resultados" class="row">
+            <div id="btn-dieta"  class="row"> 
+                <div class="col">
+                    <a href="https://www.google.com.br/">
+                        <input type="button" value="MINHA DIETA PERSONALIZADA" class="btn">
+                    </a>
+                </div>
+            </div>
             <div class="row painel-resultados">
                 <div class="col" >
                     <h2>Calorias Diárias</h2>
                     <br>
                     <div id="barCalorias"></div>
                     <div class="row minimo-maximo">
-                        <div class="col">0 Calorias</div>
-                        <div class="col">5000 Calorias</div>
+                        <div class="col-6">0 Calorias</div>
+                        <div class="col-6">5000 Calorias</div>
                     </div>
                 </div>
                 <div class="col">
                     <h3>Carboidrátos diários</h3>
                     <br>
                     <div id="barCarboidratos"></div>
+                    <div class="row minimo-maximo">
+                        <div class="col-6">0 Carboidratos</div>
+                        <div class="col-6">300 Carboidratos</div>
+                    </div>
                 </div>
             </div>
             <div class="row painel-resultados">
@@ -68,11 +80,19 @@
                     <h2>Gorduras diárias</h2>
                     <br>
                     <div id="barGorduras"></div>
+                    <div class="row minimo-maximo">
+                        <div class="col-6">0 Gorduras</div>
+                        <div class="col-6">500 Gorduras</div>
+                    </div>
                 </div>
                 <div class="col">
                     <h2>Proteínas diárias</h2>
                     <br>
                     <div id="barProteinas"></div>
+                    <div class="row minimo-maximo">
+                        <div class="col-6">0 Proteinas</div>
+                        <div class="col-6">400 Proteinas</div>
+                    </div>
                 </div>
             </div>
             <div class="row painel-resultados">
