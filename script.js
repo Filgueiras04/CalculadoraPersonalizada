@@ -110,7 +110,7 @@ function btnCalcular(){
     v_qtdCarboidratos = qtdCarboidratos(peso);
     v_qtdGorduras = qtdGorduras(peso, meta_peso);
 
-    document.getElementById('qtdAgua').innerHTML = "Recomendado" + '<BR>' + v_qtdAgua + ' L';
+    document.getElementById('qtdAgua').innerHTML = v_qtdAgua + ' L';
     document.getElementById('calcIMC').innerHTML = v_calcIMC;
     
     document.getElementById('form-final').style.display = "none";
