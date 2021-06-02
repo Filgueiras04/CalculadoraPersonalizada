@@ -28,12 +28,30 @@
         </div>
     
         <div id="atividade-diaria" class="row row-cols-2">
-            <span>Qual o nível de atividades feitas por dia?</span><br>
-            <div class="atividade-diaria col" id="atividade-diaria-preguicoso" onclick="atividadeDiaria()"><br>Preguiçoso</div>
-            <div class="atividade-diaria col" id="atividade-diaria-poucoativo" onclick="atividadeDiaria()"><br>Um pouco ativo</div>
-            <div class="atividade-diaria col" id="atividade-diaria-ativo" onclick="atividadeDiaria()"><br>Ativo</div>
-            <div class="atividade-diaria col" id="atividade-diaria-media" onclick="atividadeDiaria()"><br>Atividade média</div>
-            <div class="atividade-diaria col" id="atividade-diaria-extremamenteativo" onclick="atividadeDiaria()"><br>Extremamente ativo</div>
+            <span>Você faz atividades físicas diárias?</span><br>
+            <div class="atividade-diaria col" id="atividade-diaria-preguicoso" onclick="atividadeDiaria()"><br>Não faço</div>
+            <div class="atividade-diaria col" id="atividade-diaria-poucoativo" onclick="atividadeDiaria()"><br>Faço pouco</div>
+            <div class="atividade-diaria col" id="atividade-diaria-ativo" onclick="atividadeDiaria()"><br>Não é todo dia</div>
+            <div class="atividade-diaria col" id="atividade-diaria-media" onclick="atividadeDiaria()"><br>Faço muita</div>
+            <div class="atividade-diaria col" id="atividade-diaria-extremamenteativo" onclick="atividadeDiaria()"><br>Vou começar</div>
+        </div>
+
+        <div id="procedimento-emagrecimento" class="row row-cols-2">
+            <span>Já fez algum procedimento de emagrecimento?</span><br>
+            <div class="atividade-diaria col" id="atividade-diaria-preguicoso" onclick="procedimentoEmacrecimento()"><br>Tomei remédio</div>
+            <div class="atividade-diaria col" id="atividade-diaria-poucoativo" onclick="procedimentoEmacrecimento()"><br>Fiz dieta cetogênica</div>
+            <div class="atividade-diaria col" id="atividade-diaria-ativo" onclick="procedimentoEmacrecimento()"><br>Fiz reeducação alimentar</div>
+            <div class="atividade-diaria col" id="atividade-diaria-media" onclick="procedimentoEmacrecimento()"><br>Fiz sem acompanhamento</div>
+            <div class="atividade-diaria col" id="atividade-diaria-extremamenteativo" onclick="procedimentoEmacrecimento()"><br>Não</div>
+        </div>
+
+        <div id="gordura-corpo" class="row row-cols-2">
+            <span>Qual parte do corpo a gordura mais te incomoda?</span><br>
+            <div class="atividade-diaria col" id="atividade-diaria-preguicoso" onclick="gorduraCorporal()"><br>Coxa</div>
+            <div class="atividade-diaria col" id="atividade-diaria-poucoativo" onclick="gorduraCorporal()"><br>Barriga</div>
+            <div class="atividade-diaria col" id="atividade-diaria-ativo" onclick="gorduraCorporal()"><br>Costas</div>
+            <div class="atividade-diaria col" id="atividade-diaria-media" onclick="gorduraCorporal()"><br>Braços</div>
+            <div class="atividade-diaria col" id="atividade-diaria-extremamenteativo" onclick="gorduraCorporal()"><br>Pernas</div>
         </div>
 
         <div id="form-final" class="row">
@@ -48,11 +66,16 @@
         </div>
 
         <div id="resultados" class="row">
-            <div id="btn-dieta"  class="row"> 
+            <div id="btn-ir-dieta"  class="row"> 
                 <div class="col">
-                    <a href="https://www.google.com.br/">
-                        <input type="button" value="MINHA DIETA PERSONALIZADA" class="btn">
+                    <a href="#btn-dieta">
+                        <input type="button" value="PEGUE SUA DIETA" class="btn">
                     </a>
+                </div>
+            </div>
+            <div id="texto-resumo" class="row">
+                <div class="col">
+                    <h1>AQUI ESTÁ O SEU RESUMO</h1>
                 </div>
             </div>
             <div class="row painel-resultados calorias-carboidratos">
@@ -107,9 +130,60 @@
                 <div class="col">
                     <h2>IMC</h2>
                     <br>
+                    <br>
+                    <br>
+                    <div id="img-imc">
+                        <img src="./img/scales-blue-gradient.png" alt="Balança">
+                    </div>
                     <div id="imc">
                         <span id="calcIMC"></span>
                     </div>
+                </div>
+            </div>
+            <div class="row antes-depois">
+                <div class="col col-12 col-lg-5">
+                    <div class="row">
+                        <div class="col"><span>Antes</span></div>
+                        <div class="col"><span>Depois</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="img-01"></div>
+                            <p>Depois de tentar tantas vezes, e estar quase desistindo eu comecei a participar do Detox 24D. Confesso que estava um pouco desacreditada afinal estava passando por uma fase difícil mas depois de seguir tudo à risca e começar a ver os primeiros resultados, percebi que iria mudar realmente de vida. Em menos de 15 dias eu já tinha perdido 6 kg e estava quase chegando no peso que queria</p>
+                            <p>Eu recuperei minha auto estima e voltei novamente a ser feliz, e era isso que eu precisava.Me tornei uma pessoa ativa fisicamente e hoje vivo a vida que sempre quis</p>
+                            <p>Realmente vale a pena participar do Detox 24D</p>
+                            <h5>Tatiane</h5>
+                            <h6>Rio de Janeiro</h6>
+                        </div>
+                    </div>
+                </div>
+                <div id="espacamento" class="col col-12 col-lg-2"></div>
+                <div class="col col-12 col-lg-5">
+                    <div class="row">
+                        <div class="col"><span>Antes</span></div>
+                        <div class="col"><span>Depois</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="img-02"></div>
+                            <p>Eu estou 100% satisfeita, e muito feliz com tudo que está acontecendo na minha vida. Conheci o Detox 24D a alguns meses e desde então já perdi mais de 9Kg, sem contar a barriguinha que desinchou demais.</p>
+                            <p>A gratidão é imensa e a felicidade é algo que nem consigo mensurar, eu agradeço a Deus por ter conhecido esse projeto e por estar vivendo tudo isso.</p>
+                            <p>Obrigada!!</p>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h5>Luciana</h5>
+                            <h6>São Paulo</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="btn-dieta"  class="row"> 
+                <div class="col">
+                    <a href="https://www.google.com.br/">
+                        <input type="button" value="MINHA DIETA PERSONALIZADA" class="btn">
+                    </a>
                 </div>
             </div>
         </div>

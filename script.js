@@ -50,16 +50,6 @@ function qtdAgua(peso){
 
 function calcIMC(peso, altura){
     numimc = (peso / (altura * altura)).toFixed(1);
-    imc = document.getElementById('imc');
-    if(numimc < 18.5){
-        imc.style.color = "red"
-    }else if(numimc < 24.9){
-        imc.style.color = "green"
-    }else if(numimc < 29.9){
-        imc.style.color = "yellow"
-    }else{
-        imc.style.color = "black"
-    }
     return numimc;
 }
 
@@ -137,5 +127,13 @@ function genero(){
 }
 function atividadeDiaria(){
     document.getElementById('atividade-diaria').style.display = "none";
+    document.getElementById('procedimento-emagrecimento').style.display = "block";
+}
+function procedimentoEmacrecimento(){
+    document.getElementById('procedimento-emagrecimento').style.display = "none";
+    document.getElementById('gordura-corpo').style.display = "block";
+}
+function gorduraCorporal(){
+    document.getElementById('gordura-corpo').style.display = "none";
     document.getElementById('form-final').style.display = "block";
 }
