@@ -396,90 +396,6 @@ input.weight-icon {
 }
 
 /** Media queries **/ 
-
-@media (max-width: 414px){
-
-    #logo{
-        background-size: 60%;
-        margin-left: 30%;
-        height: 100px;
-    }
-    #genero-or{
-        margin-top: 0px;
-    }
-    #genero-male{
-        opacity: 1;
-    }
-    #genero-female{
-        opacity: 1;
-    }
-    #form-final{
-        width: 60%;
-        margin-left: 20%;
-        margin-bottom: 240px;
-    }
-    .btn-continuar{
-        padding-right: 15%;
-    }
-    .painel-resultados{
-        margin-bottom: 45%;
-    }
-    .calorias-carboidratos{
-        margin-bottom: 35%
-    }
-    #barCalorias{
-        font-size: 40px;
-    }
-    #barCarboidratos{
-        font-size: 25px;
-    }
-    #barGorduras{
-        font-size: 50px;
-    }
-    #barProteinas{
-        font-size: 25px;
-    }
-    #imc{
-        margin-top: 10%;
-        margin-bottom: 25%;
-    }
-    .qtdAgua{
-        margin-top: 10%;
-    }
-    .antes-depois{
-        margin-top: 100%;
-        margin-left: 1%;
-    }
-    #btn-dieta{
-        margin-top: 10%;
-    }
-    #btn-ir-dieta{
-        margin-left: 0;
-    }
-    #texto-resumo{
-        margin: 0;
-        padding: 0;
-    }
-    #progresso{
-        margin-top: 350px;
-        margin-bottom: 20px;
-    }
-    #copys{
-        margin-top: 1100px;
-    }
-    #copys img{
-        width: 60%;
-        margin-left: 20%;
-        margin-bottom: 10px;
-    }
-    #copys .row .col .row .col-lg-10{
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-    #frases-copy{
-        margin-left: 2%;
-    }
-}
 @media (max-width: 1200px){
     #copys{
         margin-top: 110px;
@@ -576,6 +492,91 @@ input.weight-icon {
     }
     #progresso{
         margin-top: 550px;
+        margin-bottom: 20px;
+    }
+    #copys{
+        margin-top: 1100px;
+    }
+    #copys img{
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+    #copys .row .col .row .col-lg-10{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    #frases-copy{
+        margin-left: 2%;
+    }
+}
+@media (max-width: 414px){
+
+    #logo{
+        background-size: 60%;
+        margin-left: 30%;
+        height: 100px;
+    }
+    #genero-or{
+        margin-top: 0px;
+    }
+    #genero-male{
+        opacity: 1;
+        height: 268px;
+    }
+    #genero-female{
+        opacity: 1;
+        height: 268px;
+    }
+    #form-final{
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 240px;
+    }
+    .btn-continuar{
+        padding-right: 15%;
+    }
+    .painel-resultados{
+        margin-bottom: 45%;
+    }
+    .calorias-carboidratos{
+        margin-bottom: 35%
+    }
+    #barCalorias{
+        font-size: 40px;
+    }
+    #barCarboidratos{
+        font-size: 25px;
+    }
+    #barGorduras{
+        font-size: 50px;
+    }
+    #barProteinas{
+        font-size: 25px;
+    }
+    #imc{
+        margin-top: 10%;
+        margin-bottom: 25%;
+    }
+    .qtdAgua{
+        margin-top: 10%;
+    }
+    .antes-depois{
+        margin-top: 100%;
+        margin-left: 1%;
+    }
+    #btn-dieta{
+        margin-top: 10%;
+    }
+    #btn-ir-dieta{
+        margin-left: 0;
+    }
+    #texto-resumo{
+        margin: 0;
+        padding: 0;
+    }
+    #progresso{
+        margin-top: 350px;
         margin-bottom: 20px;
     }
     #copys{
