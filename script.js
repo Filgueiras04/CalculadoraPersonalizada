@@ -105,6 +105,7 @@ function btnCalcular(){
     
     document.getElementById('form-final').style.display = "none";
     document.getElementById('textodieta').style.display = "none";
+    document.getElementById('progresso').style.display = "none";
     document.getElementById('resultados').style.display = "block";
 
     barCalorias.animate(v_qtdCalorias / 5000);
@@ -124,16 +125,22 @@ function btnCalcular(){
 function genero(){
     document.getElementById('genero').style.display = "none";
     document.getElementById('atividade-diaria').style.display = "block";
+    document.getElementById('barra-progresso').style.width = "20%";
+    document.getElementById('progresso').style.marginTop = "50px";
 }
 function atividadeDiaria(){
     document.getElementById('atividade-diaria').style.display = "none";
     document.getElementById('procedimento-emagrecimento').style.display = "block";
+    document.getElementById('barra-progresso').style.width = "40%";
 }
 function procedimentoEmacrecimento(){
     document.getElementById('procedimento-emagrecimento').style.display = "none";
     document.getElementById('gordura-corpo').style.display = "block";
+    document.getElementById('barra-progresso').style.width = "60%";
 }
 function gorduraCorporal(){
     document.getElementById('gordura-corpo').style.display = "none";
     document.getElementById('form-final').style.display = "block";
+    document.getElementById('barra-progresso').style.width = "80%";
+    document.getElementById('progresso').style.marginTop = "15px";
 }

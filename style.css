@@ -1,14 +1,13 @@
 @font-face {
-    font-family: Futura;
-    src: url(./fontes/futur.ttf);
+    font-family: Montserrat;
+    src: url(./fontes/Montserrat-BoldItalic.otf);
 }
 @font-face {
-    font-family: NunitoSans-Light;
-    src: url(./fontes/NunitoSans-Light.ttf);
+    font-family: OpenSans;
+    src: url(./fontes/OpenSans-Regular.ttf);
 }
 *{
     margin: 0;
-    font-family: Futura;
 }
 ::-webkit-input-placeholder{
     font-weight: bold;
@@ -28,6 +27,7 @@ body{
 }
 #textodieta{
     color: white;
+    font-family: Montserrat;
     text-align: center;
     text-shadow: 2px 2px rgba(000, 000, 000, 0.5);
 }
@@ -51,6 +51,7 @@ body{
     display: none;
 }
 #genero{
+    font-family: OpenSans;
     width: 70%;
     height: 268px;
     display: flex;
@@ -89,6 +90,7 @@ body{
 }
 #atividade-diaria{
     display: none;
+    font-family: OpenSans;
     text-align: center;
     color: white;
 }
@@ -96,11 +98,13 @@ body{
     display: none;
     text-align: center;
     color: white;
+    font-family: OpenSans;
 }
 #gordura-corpo{
     display: none;
     text-align: center;
     color: white;
+    font-family: OpenSans;
 }
 .atividade-diaria{
     cursor:pointer;
@@ -111,6 +115,7 @@ body{
     width: 295px;
     height: 70px;
     text-align: center;
+    font-family: OpenSans;
 }
 .atividade-diaria:hover{
     background-image: url(./img/ArtePerguntasBg.png);
@@ -118,6 +123,7 @@ body{
 }
 #form-final{
     background-color: #112f43;
+    font-family: OpenSans;
     border-radius: 25px;
     box-shadow: inset 0 0 15px rgba(000, 255, 255, 0), 0 0 15px rgba(000, 000, 000, 0.5);
 }
@@ -156,6 +162,7 @@ input.weight-icon {
     text-align: center;
     color: white;
     margin: 20px;
+    font-family: Montserrat;
 }
 .painel-resultados{
     width: 70%;
@@ -276,9 +283,11 @@ input.weight-icon {
 }
 .antes-depois{
     height: 967px;
+    font-family: OpenSans;
 }
 .antes-depois .col .row .col{
     text-align: center;
+    font-family: OpenSans;
     background: transparent;
     border-radius: 0px;
     box-shadow: inset 0 0 15px rgba(000, 255, 255, 0), 0 0 15px rgba(000, 000, 000, 0);
@@ -286,6 +295,7 @@ input.weight-icon {
 .antes-depois .col{
     background-color: #112f43;
     margin-top: 10px;
+    font-family: OpenSans;
     margin-bottom: 10px;
     padding: 0px;
     border-radius: 2px;
@@ -294,7 +304,7 @@ input.weight-icon {
 }
 .antes-depois .col span{
     color: grey;
-
+    font-family: OpenSans;
 }
 .img-01{
     height: 444px;
@@ -311,17 +321,72 @@ input.weight-icon {
     background-image: url(./img/Antes-E-Depois2.png);
 }
 .antes-depois .col p{
-    font-family: NunitoSans-Light;
+    font-family: OpenSans;
     color: white;
     margin: 10px;
     margin-left: 10%;
     margin-right: 10%;
+}
+.antes-depois .col h5{
+    font-family: Montserrat;
+    color: white;
+}
+.antes-depois .col h6{
+    font-family: Montserrat;
+    color: white;
 }
 #espacamento{
     margin: 0;
     background: transparent;
     border-radius: 0px;
     box-shadow: inset 0 0 15px rgba(000, 255, 255, 0), 0 0 15px rgba(000, 000, 000, 0);
+}
+#barra-progresso{
+    background: linear-gradient(271deg, #dad64a 0%, #65e990 100%);
+}
+#progresso{
+    margin-left: 10%;
+    width: 80%;
+}
+#computador-celular img{
+    width: 100%;
+}
+#frases-copy img{
+    width: 20%;
+    margin-right: 10px;
+}
+#frases-copy{
+    font-family: OpenSans;
+    color: white;
+    text-align: justify;
+}
+#frases-copy .row{
+    border-bottom: #112f43 1px solid;
+}
+.titulo-frases-copy{
+    text-align: center;
+    font-family: Montserrat;
+    margin-top: 30px;
+    color: white;
+}
+#copys img{
+    width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#copys{
+    font-family: OpenSans;
+    color: white;
+    text-align: justify;
+}
+#copys .row .col .row .col-10{
+    margin-top: 50px;
+    font-family: OpenSans;
+}
+#copys .row .col h3{
+    text-align: center;
+    font-family: Montserrat;
+    margin-top: 30px;
 }
 
 /** Media queries **/ 
