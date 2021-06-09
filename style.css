@@ -249,6 +249,7 @@ input.weight-icon {
 }
 #btn-dieta{
     text-align: center;
+    font-family: Montserrat;
 }
 #btn-dieta div a input{
     cursor:pointer;
@@ -266,6 +267,7 @@ input.weight-icon {
 }
 #btn-ir-dieta{
     text-align: center;
+    font-family: Montserrat;
 }
 #btn-ir-dieta div a input{
     cursor:pointer;
@@ -394,11 +396,37 @@ input.weight-icon {
 #espacamento-progresso{
     height: 0px;
 }
+#footer{
+    display: none;
+    height: 200px;
+    width: 100%;
+    background: linear-gradient(0deg, #0c212f 0%, #1f975b 100%);
+}
+#footer .container{
+    height: 100%;
+}
+#footer .row{
+    height: 100%;
+}
+#footer img{
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 50px;
+}
+#copyright{
+    color: #928f8f94;
+    font-family: OpenSans;
+    text-align: end;
+    margin-top: 170px;
+}
 
 /** Media queries **/ 
 @media (max-width: 1200px){
     #copys{
         margin-top: 110px;
+    }
+    #copyright{
+        font-size: 10px;
     }
 }
 @media (max-width: 992px){
@@ -424,6 +452,9 @@ input.weight-icon {
     }
     #barProteinas{
         font-size: 25px;
+    }
+    #copyright{
+        margin-top: 17px;
     }
 }
 @media (max-width: 767px){
@@ -603,5 +634,9 @@ input.weight-icon {
     }
     #frases-copy .row .col-9{
         padding-top: 20px;
+    }
+    #copyright{
+        text-align: center;
+        margin-top: 17px;
     }
 }

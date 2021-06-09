@@ -107,6 +107,7 @@ function btnCalcular(){
     document.getElementById('textodieta').style.display = "none";
     document.getElementById('progresso').style.display = "none";
     document.getElementById('resultados').style.display = "block";
+    document.getElementById('footer').style.display = "block";
 
     barCalorias.animate(v_qtdCalorias / 5000);
     barCalorias.setText(v_qtdCalorias);
