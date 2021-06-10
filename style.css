@@ -419,6 +419,18 @@ input.weight-icon {
     text-align: end;
     margin-top: 170px;
 }
+#idade{
+    color: white;
+}
+#altura{
+    color: white;
+}
+#peso{
+    color: white;
+}
+#meta_peso{
+    color: white;
+}
 
 /** Media queries **/ 
 @media (max-width: 1200px){
