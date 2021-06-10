@@ -417,7 +417,10 @@ input.weight-icon {
     color: #928f8f94;
     font-family: OpenSans;
     text-align: end;
-    margin-top: 170px;
+    margin-top: 130px;
+}
+#copyright p{
+    font-size: 10px;
 }
 #idade{
     color: white;
